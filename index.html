@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+  </head>
+  <body>
+    <section class="container">
+      <h1 id="title">SURVEY FORM</h1>
+      <p id="description">You are required to make enteries in all field given below in this form</p>
+      <form class="" action="index.html" method="post" id="survey-form">
+        <div>
+        <label for="name">Name:</label><input type="text" name="" value="" id="name-label" placeholder="Enter your names" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="email">Telephone number:</label><input type="email" value="" id="email-label" placeholder="Enter your email address" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="number">Email Adress:</label><input type="text" id="number-label"  placeholder="Enter your number" pattern="[0-9]{10}">
+        </div>
+        <br>
+        <div class="">
+          <label for="options">Options : </label>
+          <input list = "options" id="dropdown"/>
+          <datalist id="options">
+           <option value="option1">
+           <option value="option2">
+           <option value="option3">
+           <option value="option3">
+          </datalist>
+        </div>
+        <br>
+        <p>
+          <h4>Choose a field:</h4>
+        </p>
+      <ul>
+        <li><input type="radio" name="field" value="field1" id="field1"><label for="field">Insurance</label></li>
+        <li><input type="radio" name="field" value="field2" id="field2"><label for="field">Nationality record</label></li>
+        <li><input type="radio" name="field" value="field3" id="field3"><label for="field">Projects</label></li>
+        <li><input type="radio" name="field" value="field4" id="field4"><label for="field">Qualifications</label></li>
+      </ul>
+        <br>
+        <p>
+          <h4>Please enter your check</h4>
+        </p>
+        <ul>
+          <li><input type="checkbox" name="Check1" value="Check1"><label for="Check1">Employed</label></li>
+          <li><input type="checkbox" name="Check2" value="Check2"><label for="Check2">married</label></li>
+          <li><input type="checkbox" name="Check3" value="Check3"><label for="Check3">Educated</label></li>
+          <li><input type="checkbox" name="Check4" value="Check4"><label for="Check4">Hardworking</label></li>
+        </ul>
+        <p>
+        <h3>Add yourComments</h3>
+       </p>
+       <textarea name="name" rows="5" cols="50"></textarea>
+       <p>
+         <h3>upload</h3>
+       </p>
+       <input type="reset" value="Reset">     <input type="submit" value="Submit form">
+      </form>
+    </section>
+  </body>
+</html>
